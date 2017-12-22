@@ -23,7 +23,7 @@ func Lookup(ctx context.Context, email string) (string, error) {
 		keystr = ";search=0x"
 	)
 
-	// 1-st call to get list of maching keys
+	// 1-st call to get list of matching keys
 	v := url.Values{}
 	v.Set("op", "index")
 	v.Set("search", email)
